@@ -1,0 +1,97 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Client Page Background and Text Color */
+  .client-page {
+    background-color: #333;  /* Dark grey background to blend with the overall theme */
+    color: white;             /* White text for high contrast */
+    min-height: 100vh;        /* Ensure the page takes full height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 20px;
+  }
+  
+  /* Title of the page */
+  .page-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    border-bottom: 3px solid #0066cc; /* Darker sky blue underline */
+    padding-bottom: 10px;
+    width: 100%;
+    max-width: 1200px; /* Restrict title width */
+  }
+  
+  /* Grid Container for Clients */
+  .client-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Space between client cards */
+    width: 100%;
+    max-width: 1200px; /* Restrict grid width */
+    margin-top: 20px;
+  }
+  
+  /* Individual Client Card Styling */
+  .client-card {
+    background-color: #444; /* Lighter grey for the card background */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow to give depth */
+    border-bottom: 3px solid #0066cc; /* Sky blue underline for the whole client card */
+  }
+  
+  /* Name of the client */
+  .client-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white; /* White text for the name */
+    text-decoration: none;  /* No underline directly on the name */
+  }
+  
+  /* Client details under the name */
+  .client-details {
+    font-size: 14px;
+    color: #bbb; /* Lighter grey text for the details to blend in */
+    margin-bottom: 0; /* No margin-bottom to reduce spacing */
+  }
+  
+  /* Hover effect for client cards */
+  .client-card:hover {
+    transform: translateY(-8px); /* Slight hover effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .client-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .client-grid {
+      grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+  }
+  

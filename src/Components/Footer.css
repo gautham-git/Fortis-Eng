@@ -1,0 +1,65 @@
+/* Footer styles */
+.footer {
+    background-color: #333; /* Dark grey background */
+    color: #fff; /* White text */
+    padding: 40px 0;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px; /* Optional: limit the max width */
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 220px; /* Ensure sections are not too narrow */
+    margin: 10px 0;
+  }
+  
+  .footer-logo {
+    width: 150px; /* Set a fixed size for the logo */
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #1e90ff; /* Sky blue color for headings */
+  }
+  
+  p {
+    font-size: 14px;
+    color: #bbb; /* Lighter grey for text */
+    line-height: 1.6;
+  }
+  
+  .footer-section a {
+    color: #1e90ff; /* Sky blue links */
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      text-align: center;
+    }
+  
+    .footer-logo {
+      width: 120px; /* Smaller logo for mobile */
+    }
+  }
+  

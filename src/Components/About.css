@@ -1,0 +1,109 @@
+/* Global body styling */
+body {
+  background-color: #ffffff; /* White background */
+  color: #333; /* Set default text color to dark for readability */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Main Container for About Section */
+.about-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap when screen size shrinks */
+  align-items: center; /* Vertically center the content */
+  justify-content: space-between;
+  height: 100vh; /* Full viewport height */
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+}
+
+/* Left Section - Text Content */
+.text-section {
+  width: 50%; /* Take up the left half of the page */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-section h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333; /* Dark text for the heading */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.text-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #3a3a3a; /* Light grey text for better readability */
+  margin-bottom: 15px;
+}
+
+/* Counter Styling (if needed) */
+.text-section .counter {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3a3a3a; /* Dark grey color for the counter */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Right Section - Image */
+.image-section {
+  width: 50%; /* Take up the right half of the page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-section img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for the image */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow around the image */
+  object-fit: cover; /* Ensure image maintains aspect ratio */
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack the sections vertically */
+    padding: 10px;
+  }
+
+  .text-section, .image-section {
+    width: 100%; /* Full width for both sections on smaller screens */
+    padding: 10px;
+  }
+
+  .text-section h1 {
+    font-size: 2rem; /* Adjust heading font size on smaller screens */
+  }
+
+  .text-section p {
+    font-size: 0.95rem; /* Slightly reduce font size of paragraphs */
+  }
+
+  .image-section img {
+    width: 100%; /* Image takes full width of the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-section h1 {
+    font-size: 1.8rem; /* Further reduce heading size on very small screens */
+  }
+
+  .text-section p {
+    font-size: 0.9rem; /* Reduce paragraph font size more for mobile */
+  }
+
+  .text-section .counter {
+    font-size: 1.8rem; /* Adjust counter font size */
+  }
+}

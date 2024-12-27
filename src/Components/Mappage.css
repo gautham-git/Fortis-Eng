@@ -1,0 +1,31 @@
+/* MapPage styles */
+.map-page {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background */
+    min-height: 100vh;
+  }
+  
+  .map-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .map-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .map-container {
+    width: 100%;
+    max-width: 1200px; /* Optional, limit max width */
+    margin: 0 auto;
+  }
+  
+  iframe {
+    border-radius: 8px; /* Optional, for rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional, for subtle shadow */
+  }
+      

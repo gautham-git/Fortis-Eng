@@ -1,0 +1,110 @@
+/* General styles for the navbar */
+.navbar {
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;  /* Completely transparent background */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;  /* Smooth transitions */
+    z-index: 1000;
+  }
+  
+  .navbar.hidden {
+    transform: translateY(-100%);  /* Move the navbar up to hide it */
+  }
+  
+  /* Logo styles */
+  .logo {
+    width: 90px;  /* Decreased logo size */
+    height: auto;  /* Maintain aspect ratio */
+    margin-left: 10px;
+    transition: width 0.3s ease-in-out;  /* Smooth size transition when scrolling */
+  }
+  
+  /* Navigation links styles */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+    font-size: 16px;
+    color: white;  /* White text color */
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .nav-links li:hover {
+    color: #1e90ff;  /* Change color on hover */
+  }
+  
+  .contact-btn {
+    padding: 8px 16px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-btn:hover {
+    background-color: #1769aa;
+  }
+  
+  /* Hamburger icon styles (visible only on small screens) */
+  .hamburger-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #fff;  /* White bars for the hamburger menu */
+    border-radius: 5px;
+  }
+  
+  /* Media Query for Small Screens */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;  /* Hide links on small screens */
+      position: absolute;
+      top: 60px;  /* Adjust based on your navbar height */
+      left: 0;
+      width: 100%;
+      background-color: #333;  /* Dark background for the dropdown */
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .nav-links.open {
+      display: flex;  /* Show links when menu is open */
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    /* Show the hamburger icon */
+    .hamburger-icon {
+      display: flex;
+    }
+  
+    .navbar.scrolled .hamburger-icon .bar {
+      background-color: #fff;  /* Change hamburger icon color on scroll */
+    }
+  }
+  
