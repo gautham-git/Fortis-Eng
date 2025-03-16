@@ -11,14 +11,14 @@ const Navbar = () => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
       
-      // Hide navbar when scrolling down, show when scrolling up
+      
       setIsScrolled(currentScrollPos > prevScrollPos);
 
-      // Update previous scroll position
+      
       setPrevScrollPos(currentScrollPos);
     };
 
-    // Listen for scroll events
+   
     window.addEventListener('scroll', handleScroll);
 
     return () => {
@@ -36,18 +36,16 @@ const Navbar = () => {
         <img src={fortis} alt="Logo" className="logo" />
       </div>
 
-      {/* Hamburger icon (only visible on small screens) */}
       <div className="hamburger-icon" onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
 
-      {/* Nav links (show when menu is open or on larger screens) */}
       <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-        <li>Home</li>
-        <li>Products</li>
-        <li>About Us</li>
+        <li><a href='./Hero/Hero.jsx'>Home</a></li>
+        <li><a href='./Products.jsx'>Products</a></li>
+        <li><a href='./About.jsx'>About Us</a></li>
         <li><button className="contact-btn">Contact</button></li>
       </ul>
     </nav>

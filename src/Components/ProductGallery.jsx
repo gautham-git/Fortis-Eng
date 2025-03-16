@@ -9,7 +9,7 @@ const ProductGallery = () => {
     'https://via.placeholder.com/300',
     'https://via.placeholder.com/300',
     'https://via.placeholder.com/300',
-    'https://via.placeholder.com/300',
+    card7,
     'https://via.placeholder.com/300',
     'https://via.placeholder.com/300',
     'https://via.placeholder.com/300',

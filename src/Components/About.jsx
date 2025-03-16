@@ -63,25 +63,27 @@ const About = () => {
       <div className="text-section">
         <h1>About Fortis Engineering</h1>
         <p className="p1">
-        Fortis Engineers -The leading Natural Rubber processing ( TSR/ISNR) machinery manufacturer successfully continues it's journey in supplying quality and reliabile machines all over India making it one of the top in the industry.
+          Fortis Engineers - The leading Natural Rubber processing (TSR/ISNR) machinery manufacturer, successfully continues its journey in supplying quality and reliable machines all over India, making it one of the top players in the industry.
         </p>
         <p className="p2">
-        Our commitment towards delivering best quality machinery and prompt service has taken the company to this position. Quality is our motto, teamwork is our strength. We understand the challenges faced by the industry and works towards delivering machines with innovative upgradations.
+          Our commitment to delivering the best quality machinery and prompt service has propelled the company to this position. Quality is our motto, teamwork is our strength. We understand the challenges faced by the industry and work towards delivering machines with innovative upgrades.
         </p>
         <p className="p3">
-        We assist you in all aspects of factory installation starting from project report assistance, setting out of layout, plant design, operations, installation, commissioning and trial run.
-
+          We assist you in all aspects of factory installation starting from project report assistance, layout setting out, plant design, operations, installation, commissioning, and trial runs.
         </p>
         <p className="p4">
           We welcome you to associate with us in building your dream crumb/TSR factory.
         </p>
 
-        <div className="counters">
-          {/* Counter for Products Delivered */}
-          <CountUp target={30} duration={3000} label="products delivered" />
+        {/* Counter Section - Wrapped in a new container */}
+        <div className="counter-container">
+          <div className="counter-block">
+            <CountUp target={30} duration={3000} label="Products Delivered" />
+          </div>
           
-          {/* Counter for Years of Experience */}
-          <CountUp target={4} duration={3000} label="years of experience" />
+          <div className="counter-block">
+            <CountUp target={4} duration={3000} label="Years of Experience" />
+          </div>
         </div>
       </div>
 

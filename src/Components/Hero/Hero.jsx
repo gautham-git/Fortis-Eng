@@ -6,7 +6,7 @@ const Hero = () => {
     <div className='hero container'>
       <div className='hero-text'>
         <h1>Fortis Engineering</h1>
-        <p>Leading Manufacturer and consultants of Natural Rubber processing machinery (ISNR/TSR),factory installation and commissioning</p>  
+        <p><h2>Leading Manufacturer and consultants of Natural Rubber processing machinery (ISNR/TSR),factory installation and commissioning</h2></p>  
       </div>  
     </div>
   )
