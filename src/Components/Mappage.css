@@ -1,31 +1,48 @@
-/* MapPage styles */
 .map-page {
-    text-align: center;
-    padding: 40px;
-    background-color: #f9f9f9; /* Light background */
-    min-height: 100vh;
-  }
-  
-  .map-title {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .map-description {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 40px;
-  }
-  
-  .map-container {
-    width: 100%;
-    max-width: 1200px; /* Optional, limit max width */
-    margin: 0 auto;
-  }
-  
-  iframe {
-    border-radius: 8px; /* Optional, for rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional, for subtle shadow */
-  }
-      
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Heading overlays the map */
+.map-header {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4); /* Optional dark overlay */
+  padding: 20px 40px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.map-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.map-description {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Full-width, full-height map */
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
